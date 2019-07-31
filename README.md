@@ -6,7 +6,7 @@ This repository contains the Python client to get a list of providers supporting
 * Basic knowledge of the `json`, `xmltodict` and `httplib` python libraries are requested
 * Python v2.7.12+
 
-## Usage 
+## Settings
 
 For simple one-off requests, you can use this library as a drop-in replacement for the requests library:
 
@@ -19,4 +19,10 @@ import urllib2
 # VO_NAME used to query the EGI AppDB
 vo = "vo.access.egi.eu"
 [..]
+</pre>
+
+## Settings
+
+<pre>
+]$ python python-appdb-info.py > out.json
 </pre>
