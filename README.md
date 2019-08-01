@@ -24,5 +24,5 @@ vo = "vo.access.egi.eu"
 ## Usage
 
 <pre>
-]$ python python-appdb-info.py > out.json
+]$ python python-appdb-info.py > result.json
 </pre>
