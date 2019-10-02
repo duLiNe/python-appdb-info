@@ -1,5 +1,22 @@
 #!/usr/bin/env python2
 
+#
+#  Copyright 2019 EGI Foundation
+# 
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+#
+#
+
 import json
 import httplib
 import xmltodict
@@ -19,7 +36,7 @@ vo = "vo.access.egi.eu"
 def appdb_call(c):
 	''' Connect to the EGI AppDB server and get the list of providers supporting the given VO '''
 
-        conn  =  httplib.HTTPSConnection("appdb.egi.eu")
+        conn = httplib.HTTPSConnection("appdb.egi.eu")
         conn.request("GET", c)
         data = conn.getresponse().read()
         conn.close()
@@ -181,7 +198,8 @@ def main():
 
 	try:
 		# E.g. https://appdb.egi.eu/rest/1.0/sites?flt=%%2B%%3Dvo.name:training.egi.eu&%%2B%%3Dsite.supports:1
-	        data = appdb_call('/rest/1.0/sites?flt=%%2B%%3Dvo.name:%s&%%2B%%3Dsite.supports:1' %vo)
+	        #data = appdb_call('/rest/1.0/sites?flt=%%2B%%3Dvo.name:%s&%%2B%%3Dsite.supports:1' %vo)
+		data = appdb_call('/rest/1.0/sites?listmode=details&flt=%%3Dvo.name%%3A%s' %vo)
 
 		# Initialize the JSON object
 		providers = []
