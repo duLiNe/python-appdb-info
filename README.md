@@ -3,7 +3,7 @@ This repository contains the Python client to get a list of providers supporting
 
 ## Requirements
 
-* Basic knowledge of the `json`, `xmltodict` and `httplib` python libraries are requested
+* Basic knowledge of the `json`, `xmltodict`, `urlparse` and `httplib` python libraries are requested
 * Python v2.7.12+
 
 ## Settings
