@@ -21,11 +21,12 @@ import json
 import httplib
 import xmltodict
 import urllib2
+from urlparse import urlparse
 
 __author__    = "Giuseppe LA ROCCA"
 __email__     = "giuseppe.larocca@egi.eu"
 __version__   = "$Revision: 0.0.0"
-__date__      = "$Date: 30/07/2019 16:17:27"
+__date__      = "$Date: 04/10/2019 12:32:27"
 __copyright__ = "Copyright (c) 2019 EGI Foundation"
 __license__   = "Apache Licence v2.0"
 
@@ -59,10 +60,13 @@ def get_provider_metadata(providerID):
 		
 		provider_name = data['appdb:appdb']['virtualization:provider']['provider:name']	
 		provider_authn = data['appdb:appdb']['virtualization:provider']
+		provider_service_type = data['appdb:appdb']['virtualization:provider']
 
 		if (data['appdb:appdb']['virtualization:provider'].has_key('provider:endpoint_url')):
 			provider_endpoint_url = data['appdb:appdb']['virtualization:provider']['provider:endpoint_url']
-			if (provider_authn['@authn'] == "OIDC"):
+			
+			#if (provider_authn['@authn'] == "OIDC"):
+			if (provider_service_type['@service_type'] == "org.openstack.nova"):
 				keystone_url = data['appdb:appdb']['virtualization:provider']['provider:url']
 			else:
 				keystone_url = "N/A"
@@ -89,7 +93,7 @@ def get_provider_metadata(providerID):
 	return provider
 
 
-def get_resource(providerID):
+def get_resource_tpl(providerID):
 
         try:
 		# Initialize the JSON object
@@ -122,7 +126,7 @@ def get_resource(providerID):
 	return resources_tpl
 
 
-def get_va(providerID):
+def get_os_tpl(providerID):
 
         try:
 		# Initialize the JSON object
@@ -138,24 +142,26 @@ def get_va(providerID):
 		for os_tpl in data['appdb:appdb']['virtualization:provider']['provider:image']:
 			try:
 				if vo in os_tpl['@voname']:
-					#print "\n - Name = %s [v%s] [%s] " %(os_tpl['@appname'], os_tpl['@vmiversion'], providerID)
+					#print "- Name = %s [v%s] [%s] " %(os_tpl['@appname'], os_tpl['@vmiversion'], providerID)
 					appname = os_tpl['@appname']
 					vmiversion = os_tpl['@vmiversion']
 
-					# authn = OIDC ?
-					provider_authn = data['appdb:appdb']['virtualization:provider']
-					if (provider_authn['@authn'] == "OIDC"):
+					provider_service_type = data['appdb:appdb']['virtualization:provider']
+					# Check whether the provider supports: X509-VOMS or OIDC
+					# Possible @service_type values: org.openstack.nova, eu.egi.cloud.vm-management.occi	
+					if (provider_service_type['@service_type'] == "org.openstack.nova"):
 
 						provider_url = data['appdb:appdb']['virtualization:provider']['provider:url']
-						keystone_url = provider_url.split(":5000")[0]
-	
+						o = urlparse(provider_url)
+						_url = o.scheme + "://" + o.hostname
+
 						if os_tpl['@va_provider_image_id'].startswith("os_tpl"):
 							_os_tpl=os_tpl['@va_provider_image_id'].replace("os_tpl","os")
 							#print " - ID = http://schemas.openstack.org/template/%s" %_os_tpl
-							va_provider_image_id = "%s/%s" %(keystone_url, _os_tpl)
+							va_provider_image_id = "%s/%s" %(_url, _os_tpl)
 				 		else:
 							#print " - ID = %s" %os_tpl['@va_provider_image_id']
-							va_provider_image_id = "%s/%s" %(keystone_url, \
+							va_provider_image_id = "%s/%s" %(_url, \
 									        os_tpl['@va_provider_image_id'].split("#")[1])
 					else:
 						if os_tpl['@va_provider_image_id'].startswith("os_tpl"):
@@ -171,7 +177,7 @@ def get_va(providerID):
                 			        "vmiversion" : vmiversion,
                                 		"va_provider_image_id" : va_provider_image_id
 		                        })
-					
+
 		        except Exception as error:
                 		pass
 
@@ -197,9 +203,10 @@ def get_provider_url(providerID):
 def main():
 
 	try:
-		# E.g. https://appdb.egi.eu/rest/1.0/sites?flt=%%2B%%3Dvo.name:training.egi.eu&%%2B%%3Dsite.supports:1
+		# E.g. https://appdb.egi.eu/rest/1.0/sites?flt=%%2B%%3Dvo.name:vo.access.egi.eu&%%2B%%3Dsite.supports:1
 	        #data = appdb_call('/rest/1.0/sites?flt=%%2B%%3Dvo.name:%s&%%2B%%3Dsite.supports:1' %vo)
-		data = appdb_call('/rest/1.0/sites?listmode=details&flt=%%3Dvo.name%%3A%s' %vo)
+		# E.g. https://appdb.egi.eu/rest/1.0/sites?listmode=details&flt=%%3Dvo.access.egi.eu%%3A
+	        data = appdb_call('/rest/1.0/sites?listmode=details&flt=%%3Dvo.name%%3A%s' %vo)
 
 		# Initialize the JSON object
 		providers = []
@@ -219,21 +226,23 @@ def main():
 
 		for providerID in providersID:
 			# Check if lists are not empty ...
-			if get_va(providerID) and get_resource(providerID):
+			if get_os_tpl(providerID) and get_resource_tpl(providerID):
 				# Creation of the final JSON object
 		                providers.append({ 
 				     # Collect the provider metadata
 				     "provider" : get_provider_metadata(providerID),
                         	     # Collect the resource_tpl published by the providerID (if any)
-	                             "resource_tpl" : get_resource(providerID),
+	                             "resource_tpl" : get_resource_tpl(providerID),
         	                     # Collect the os_tpl published by the providerID (if any)
-	        	             "os_tpl" : get_va(providerID)
+	        	             "os_tpl" : get_os_tpl(providerID)
                 		})
 
 		# Diplay the final JSON object
 		print ("\n %s" %json.dumps(providers, 
 			       indent=4, 
 			       sort_keys=False))
+
+		
 
 	except Exception as error:
 		pass
