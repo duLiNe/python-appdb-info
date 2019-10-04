@@ -65,7 +65,6 @@ def get_provider_metadata(providerID):
 		if (data['appdb:appdb']['virtualization:provider'].has_key('provider:endpoint_url')):
 			provider_endpoint_url = data['appdb:appdb']['virtualization:provider']['provider:endpoint_url']
 			
-			#if (provider_authn['@authn'] == "OIDC"):
 			if (provider_service_type['@service_type'] == "org.openstack.nova"):
 				keystone_url = data['appdb:appdb']['virtualization:provider']['provider:url']
 			else:
@@ -84,7 +83,7 @@ def get_provider_metadata(providerID):
                        	"status" : status['@status'], 
 	                "authn" : provider_authn['@authn'],
         	        "occi_endpoint" : provider_endpoint_url,
-                        "keystone_endpoint" : keystone_url,
+                        "keystone_endpoint" : keystone_url
 	         })
 
         except Exception as error:
