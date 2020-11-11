@@ -1,726 +1,835 @@
 
  [
-    {
-        "os_tpl": [
-            {
-                "vmiversion": "3.7.5.4.1", 
-                "va_provider_image_id": "http://schemas.fedcloud-services.egi.cesga.es/occi/infrastructure/os_tpl#199", 
-                "appname": "DCI-Bridge"
-            }, 
-            {
-                "vmiversion": "3.14.2", 
-                "va_provider_image_id": "http://schemas.fedcloud-services.egi.cesga.es/occi/infrastructure/os_tpl#173", 
-                "appname": "Chipster"
-            }, 
-            {
-                "vmiversion": "2019.07.08", 
-                "va_provider_image_id": "http://schemas.fedcloud-services.egi.cesga.es/occi/infrastructure/os_tpl#207", 
-                "appname": "EGI CentOS 7"
-            }, 
-            {
-                "vmiversion": "2019.07.08", 
-                "va_provider_image_id": "http://schemas.fedcloud-services.egi.cesga.es/occi/infrastructure/os_tpl#208", 
-                "appname": "EGI Centos 6"
-            }, 
-            {
-                "vmiversion": "2019.07.11", 
-                "va_provider_image_id": "http://schemas.fedcloud-services.egi.cesga.es/occi/infrastructure/os_tpl#205", 
-                "appname": "EGI Ubuntu 16.04 LTS"
-            }, 
-            {
-                "vmiversion": "2019.07.11", 
-                "va_provider_image_id": "http://schemas.fedcloud-services.egi.cesga.es/occi/infrastructure/os_tpl#206", 
-                "appname": "EGI Ubuntu 14.04"
-            }
-        ], 
-        "resource_tpl": [
-            {
-                "main_memory_size": "8192", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#exprivia", 
-                "physical_cpus": "2", 
-                "logical_cpus": "2"
-            }, 
-            {
-                "main_memory_size": "8192", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#cor2mem8hd200", 
-                "physical_cpus": "2", 
-                "logical_cpus": "2"
-            }, 
-            {
-                "main_memory_size": "16384", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#mem_large", 
-                "physical_cpus": "4", 
-                "logical_cpus": "4"
-            }, 
-            {
-                "main_memory_size": "4096", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#mem_small", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "16384", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#nextgeoss2", 
-                "physical_cpus": "8", 
-                "logical_cpus": "8"
-            }, 
-            {
-                "main_memory_size": "32768", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#cor2mem32hd200", 
-                "physical_cpus": "2", 
-                "logical_cpus": "2"
-            }, 
-            {
-                "main_memory_size": "32768", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#cor32mem8hd200", 
-                "physical_cpus": "2", 
-                "logical_cpus": "2"
-            }, 
-            {
-                "main_memory_size": "32768", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#cor24mem32hd50", 
-                "physical_cpus": "24", 
-                "logical_cpus": "24"
-            }, 
-            {
-                "main_memory_size": "8192", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#cor24mem8hd50", 
-                "physical_cpus": "24", 
-                "logical_cpus": "24"
-            }, 
-            {
-                "main_memory_size": "4096", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#large", 
-                "physical_cpus": "4", 
-                "logical_cpus": "4"
-            }, 
-            {
-                "main_memory_size": "4096", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#cor2mem4hd50", 
-                "physical_cpus": "2", 
-                "logical_cpus": "2"
-            }, 
-            {
-                "main_memory_size": "4096", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#cor2mem4hd10", 
-                "physical_cpus": "2", 
-                "logical_cpus": "2"
-            }, 
-            {
-                "main_memory_size": "51200", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#cor24mem50hd50", 
-                "physical_cpus": "24", 
-                "logical_cpus": "24"
-            }, 
-            {
-                "main_memory_size": "3072", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#nextgeoss", 
-                "physical_cpus": "2", 
-                "logical_cpus": "2"
-            }, 
-            {
-                "main_memory_size": "16384", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#cor8mem16hd300", 
-                "physical_cpus": "8", 
-                "logical_cpus": "8"
-            }, 
-            {
-                "main_memory_size": "2048", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#medium", 
-                "physical_cpus": "2", 
-                "logical_cpus": "2"
-            }, 
-            {
-                "main_memory_size": "8192", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#cor2mem8hd100", 
-                "physical_cpus": "2", 
-                "logical_cpus": "2"
-            }, 
-            {
-                "main_memory_size": "4096", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#medium_4g", 
-                "physical_cpus": "2", 
-                "logical_cpus": "2"
-            }, 
-            {
-                "main_memory_size": "1024", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#small", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "24576", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#clarin", 
-                "physical_cpus": "12", 
-                "logical_cpus": "12"
-            }, 
-            {
-                "main_memory_size": "8192", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#mem_medium", 
-                "physical_cpus": "2", 
-                "logical_cpus": "2"
-            }, 
-            {
-                "main_memory_size": "16384", 
-                "resource_name": "http://schemas.ogf.org/occi/infrastructure/compute/template/1.1#cor24mem16hd50", 
-                "physical_cpus": "24", 
-                "logical_cpus": "24"
-            }
-        ], 
-        "provider": [
-            {
-                "status": "Certified", 
-                "sitename": "CESGA", 
-                "keystone_endpoint": "N/A", 
-                "authn": "X509-VOMS", 
-                "occi_endpoint": "https://fedcloud-services.egi.cesga.es:11443", 
-                "id": "9420G0"
-            }
-        ]
-    }, 
-    {
-        "os_tpl": [
-            {
-                "vmiversion": "3.7.5.4.1", 
-                "va_provider_image_id": "https://sbgcloud.in2p3.fr/f691b499-f4fe-4a4f-9488-5e517b41b20d", 
-                "appname": "DCI-Bridge"
-            }, 
-            {
-                "vmiversion": "3.14.2", 
-                "va_provider_image_id": "https://sbgcloud.in2p3.fr/9c6c5b3c-3fcb-4c39-a6cc-46e7fcfdebba", 
-                "appname": "Chipster"
-            }, 
-            {
-                "vmiversion": "2019.07.08", 
-                "va_provider_image_id": "https://sbgcloud.in2p3.fr/75e13cb1-96db-4f11-ae58-e08dc5b39968", 
-                "appname": "EGI CentOS 7"
-            }, 
-            {
-                "vmiversion": "2019.07.08", 
-                "va_provider_image_id": "https://sbgcloud.in2p3.fr/52d997c9-6ee0-44cf-a493-8a26ef836c9b", 
-                "appname": "EGI Centos 6"
-            }, 
-            {
-                "vmiversion": "2019.07.11", 
-                "va_provider_image_id": "https://sbgcloud.in2p3.fr/d3ff9d4f-c89f-488c-a23c-a1113a72298c", 
-                "appname": "EGI Ubuntu 16.04 LTS"
-            }, 
-            {
-                "vmiversion": "2019.07.11", 
-                "va_provider_image_id": "https://sbgcloud.in2p3.fr/0c882748-bbb4-4183-82cc-d4ce6399e891", 
-                "appname": "EGI Ubuntu 14.04"
-            }
-        ], 
-        "resource_tpl": [
-            {
-                "main_memory_size": "4096", 
-                "resource_name": "http://schemas.openstack.org/template/resource#8", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "65536", 
-                "resource_name": "http://schemas.openstack.org/template/resource#29f63f0e-58c8-4c39-adb7-136509c8253c", 
-                "physical_cpus": "16", 
-                "logical_cpus": "16"
-            }, 
-            {
-                "main_memory_size": "2048", 
-                "resource_name": "http://schemas.openstack.org/template/resource#7", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "512000", 
-                "resource_name": "http://schemas.openstack.org/template/resource#13", 
-                "physical_cpus": "48", 
-                "logical_cpus": "48"
-            }, 
-            {
-                "main_memory_size": "131072", 
-                "resource_name": "http://schemas.openstack.org/template/resource#11", 
-                "physical_cpus": "16", 
-                "logical_cpus": "16"
-            }, 
-            {
-                "main_memory_size": "16384", 
-                "resource_name": "http://schemas.openstack.org/template/resource#5", 
-                "physical_cpus": "8", 
-                "logical_cpus": "8"
-            }, 
-            {
-                "main_memory_size": "65536", 
-                "resource_name": "http://schemas.openstack.org/template/resource#887ec2f5-775d-4bd5-a4a4-c1763f0e6857", 
-                "physical_cpus": "32", 
-                "logical_cpus": "32"
-            }, 
-            {
-                "main_memory_size": "8192", 
-                "resource_name": "http://schemas.openstack.org/template/resource#4", 
-                "physical_cpus": "4", 
-                "logical_cpus": "4"
-            }, 
-            {
-                "main_memory_size": "262144", 
-                "resource_name": "http://schemas.openstack.org/template/resource#9", 
-                "physical_cpus": "16", 
-                "logical_cpus": "16"
-            }, 
-            {
-                "main_memory_size": "262144", 
-                "resource_name": "http://schemas.openstack.org/template/resource#12", 
-                "physical_cpus": "16", 
-                "logical_cpus": "16"
-            }, 
-            {
-                "main_memory_size": "512", 
-                "resource_name": "http://schemas.openstack.org/template/resource#1", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "2048", 
-                "resource_name": "http://schemas.openstack.org/template/resource#2", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "32768", 
-                "resource_name": "http://schemas.openstack.org/template/resource#a7b95839-b756-4594-850f-2aa6f7dbd722", 
-                "physical_cpus": "16", 
-                "logical_cpus": "16"
-            }, 
-            {
-                "main_memory_size": "131072", 
-                "resource_name": "http://schemas.openstack.org/template/resource#10", 
-                "physical_cpus": "16", 
-                "logical_cpus": "16"
-            }, 
-            {
-                "main_memory_size": "4096", 
-                "resource_name": "http://schemas.openstack.org/template/resource#1e9899d4-29fd-447b-ad91-da131ccfe077", 
-                "physical_cpus": "2", 
-                "logical_cpus": "2"
-            }, 
-            {
-                "main_memory_size": "131072", 
-                "resource_name": "http://schemas.openstack.org/template/resource#f0b46aeb-f5ac-4e4d-ad53-fa8d5e8b01ef", 
-                "physical_cpus": "16", 
-                "logical_cpus": "16"
-            }, 
-            {
-                "main_memory_size": "32768", 
-                "resource_name": "http://schemas.openstack.org/template/resource#6", 
-                "physical_cpus": "16", 
-                "logical_cpus": "16"
-            }, 
-            {
-                "main_memory_size": "4096", 
-                "resource_name": "http://schemas.openstack.org/template/resource#3", 
-                "physical_cpus": "2", 
-                "logical_cpus": "2"
-            }
-        ], 
-        "provider": [
-            {
-                "status": "Certified", 
-                "sitename": "IN2P3-IRES", 
-                "keystone_endpoint": "https://sbgcloud.in2p3.fr:5000/v3", 
-                "authn": "OIDC", 
-                "occi_endpoint": "http://sbgcloud.in2p3.fr:8774/v2.1/ba660c58b52a4ac0a454597f2403f831", 
-                "id": "7535G0"
-            }
-        ]
-    }, 
-    {
-        "os_tpl": [
-            {
-                "vmiversion": "3.7.5.4.1", 
-                "va_provider_image_id": "http://schemas.openstack.org/template/os#b76e370f-89d1-4648-85fe-2602b0ac4440", 
-                "appname": "DCI-Bridge"
-            }, 
-            {
-                "vmiversion": "3.14.2", 
-                "va_provider_image_id": "http://schemas.openstack.org/template/os#8cfeb206-6cb9-4409-94c9-4127a535c2b6", 
-                "appname": "Chipster"
-            }, 
-            {
-                "vmiversion": "2019.01.21", 
-                "va_provider_image_id": "http://schemas.openstack.org/template/os#39534085-01a2-429f-a859-c841dfe017e9", 
-                "appname": "EGI CentOS 7"
-            }, 
-            {
-                "vmiversion": "2019.01.21", 
-                "va_provider_image_id": "http://schemas.openstack.org/template/os#cdda0aec-af3b-4ad1-bc54-c06aec34e43e", 
-                "appname": "EGI Centos 6"
-            }, 
-            {
-                "vmiversion": "2019.01.21", 
-                "va_provider_image_id": "http://schemas.openstack.org/template/os#a92aa476-a12d-41a1-8758-92c962063f24", 
-                "appname": "EGI Ubuntu 16.04 LTS"
-            }, 
-            {
-                "vmiversion": "2019.01.21", 
-                "va_provider_image_id": "http://schemas.openstack.org/template/os#3f0e34df-59cf-4ea2-b53e-a3de8802e598", 
-                "appname": "EGI Ubuntu 14.04"
-            }
-        ], 
-        "resource_tpl": [
-            {
-                "main_memory_size": "16384", 
-                "resource_name": "http://schemas.openstack.org/template/resource#831e1465-3551-4ce3-a663-cebee7b04710", 
-                "physical_cpus": "8", 
-                "logical_cpus": "8"
-            }, 
-            {
-                "main_memory_size": "64", 
-                "resource_name": "http://schemas.openstack.org/template/resource#b8f64e9d-d5bc-40c3-bdc6-d55fe3625c72", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "8192", 
-                "resource_name": "http://schemas.openstack.org/template/resource#ce1d7a0e-32cf-44c8-a8ba-6a387f516b69", 
-                "physical_cpus": "4", 
-                "logical_cpus": "4"
-            }, 
-            {
-                "main_memory_size": "512", 
-                "resource_name": "http://schemas.openstack.org/template/resource#f1356df5-fc28-43ba-bba0-2ad0dcd01b1b", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "2048", 
-                "resource_name": "http://schemas.openstack.org/template/resource#2", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "2048", 
-                "resource_name": "http://schemas.openstack.org/template/resource#8c3bded5-f640-4870-8ed0-f73d3f8eca8e", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "4096", 
-                "resource_name": "http://schemas.openstack.org/template/resource#fea52bb1-6a69-4d6c-99fb-531c9cf73e67", 
-                "physical_cpus": "2", 
-                "logical_cpus": "2"
-            }
-        ], 
-        "provider": [
-            {
-                "status": "Certified", 
-                "sitename": "INFN-CATANIA-STACK", 
-                "keystone_endpoint": "N/A", 
-                "authn": "X509-VOMS", 
-                "occi_endpoint": "http://stack-server.ct.infn.it:8787/occi1.1", 
-                "id": "9159G0"
-            }
-        ]
-    }, 
-    {
-        "os_tpl": [
-            {
-                "vmiversion": "3.7.5.4.1", 
-                "va_provider_image_id": "http://schemas.openstack.org/template/os#b76e370f-89d1-4648-85fe-2602b0ac4440", 
-                "appname": "DCI-Bridge"
-            }, 
-            {
-                "vmiversion": "3.14.2", 
-                "va_provider_image_id": "http://schemas.openstack.org/template/os#8cfeb206-6cb9-4409-94c9-4127a535c2b6", 
-                "appname": "Chipster"
-            }, 
-            {
-                "vmiversion": "2019.01.21", 
-                "va_provider_image_id": "http://schemas.openstack.org/template/os#39534085-01a2-429f-a859-c841dfe017e9", 
-                "appname": "EGI CentOS 7"
-            }, 
-            {
-                "vmiversion": "2019.01.21", 
-                "va_provider_image_id": "http://schemas.openstack.org/template/os#cdda0aec-af3b-4ad1-bc54-c06aec34e43e", 
-                "appname": "EGI Centos 6"
-            }, 
-            {
-                "vmiversion": "2019.01.21", 
-                "va_provider_image_id": "http://schemas.openstack.org/template/os#a92aa476-a12d-41a1-8758-92c962063f24", 
-                "appname": "EGI Ubuntu 16.04 LTS"
-            }, 
-            {
-                "vmiversion": "2019.01.21", 
-                "va_provider_image_id": "http://schemas.openstack.org/template/os#3f0e34df-59cf-4ea2-b53e-a3de8802e598", 
-                "appname": "EGI Ubuntu 14.04"
-            }
-        ], 
-        "resource_tpl": [
-            {
-                "main_memory_size": "16384", 
-                "resource_name": "http://schemas.openstack.org/template/resource#831e1465-3551-4ce3-a663-cebee7b04710", 
-                "physical_cpus": "8", 
-                "logical_cpus": "8"
-            }, 
-            {
-                "main_memory_size": "64", 
-                "resource_name": "http://schemas.openstack.org/template/resource#b8f64e9d-d5bc-40c3-bdc6-d55fe3625c72", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "8192", 
-                "resource_name": "http://schemas.openstack.org/template/resource#ce1d7a0e-32cf-44c8-a8ba-6a387f516b69", 
-                "physical_cpus": "4", 
-                "logical_cpus": "4"
-            }, 
-            {
-                "main_memory_size": "512", 
-                "resource_name": "http://schemas.openstack.org/template/resource#f1356df5-fc28-43ba-bba0-2ad0dcd01b1b", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "2048", 
-                "resource_name": "http://schemas.openstack.org/template/resource#2", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "2048", 
-                "resource_name": "http://schemas.openstack.org/template/resource#8c3bded5-f640-4870-8ed0-f73d3f8eca8e", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "4096", 
-                "resource_name": "http://schemas.openstack.org/template/resource#fea52bb1-6a69-4d6c-99fb-531c9cf73e67", 
-                "physical_cpus": "2", 
-                "logical_cpus": "2"
-            }
-        ], 
-        "provider": [
-            {
-                "status": "Certified", 
-                "sitename": "INFN-CATANIA-STACK", 
-                "keystone_endpoint": "N/A", 
-                "authn": "X509-VOMS", 
-                "occi_endpoint": "http://stack-server.ct.infn.it:8774/v2.1/4e410904908e43418294ace8629ec843", 
-                "id": "11488G0"
-            }
-        ]
-    }, 
-    {
-        "os_tpl": [
-            {
-                "vmiversion": "4.1.1-2", 
-                "va_provider_image_id": "os#4145d120-6843-4500-a9f2-63ae8f8931eb", 
-                "appname": "Jupyter Notebook"
-            }, 
-            {
-                "vmiversion": "2017.03.29", 
-                "va_provider_image_id": "os#625bbe5d-f9fc-4886-b94c-172fd38d9f35", 
-                "appname": "EGI Fedora 25-DELETED-9abb6c48-687b-4580-b1e9-9e40d3760c76"
-            }, 
-            {
-                "vmiversion": "3.7.1.7", 
-                "va_provider_image_id": "os#2bc686e4-7916-4765-ad19-aa83a5eb6e89", 
-                "appname": "DCI-Bridge"
-            }, 
-            {
-                "vmiversion": "3.7.5.4", 
-                "va_provider_image_id": "os#fd3fc265-f7e4-42fb-9481-b9c81e141a91", 
-                "appname": "DCI-Bridge"
-            }, 
-            {
-                "vmiversion": "3.6.2", 
-                "va_provider_image_id": "os#4f1c80e4-5aea-4e75-95b3-e264845e57fb", 
-                "appname": "Chipster"
-            }, 
-            {
-                "vmiversion": "3.14.2", 
-                "va_provider_image_id": "os#ac268b33-5b9e-4a46-bfd6-b84ed7083dad", 
-                "appname": "Chipster"
-            }, 
-            {
-                "vmiversion": "2019.07.08", 
-                "va_provider_image_id": "os#81ba45a3-4c56-4858-ae89-03bff982128d", 
-                "appname": "EGI CentOS 7"
-            }, 
-            {
-                "vmiversion": "2019.07.08", 
-                "va_provider_image_id": "os#d54df173-4396-4b7d-b1f4-86c19c9beca4", 
-                "appname": "EGI Centos 6"
-            }, 
-            {
-                "vmiversion": "2018.01.23", 
-                "va_provider_image_id": "os#b8ee3a2f-e7cc-4cf5-b191-e4529883e28e", 
-                "appname": "EGI Ubuntu 16.04 LTS"
-            }, 
-            {
-                "vmiversion": "2019.07.11", 
-                "va_provider_image_id": "os#566b2c8e-6af4-435d-835e-7f5e607db18e", 
-                "appname": "EGI Ubuntu 16.04 LTS"
-            }, 
-            {
-                "vmiversion": "2019.07.11", 
-                "va_provider_image_id": "os#7495de3b-ec60-4d1d-badd-37ed914698a8", 
-                "appname": "EGI Ubuntu 14.04"
-            }
-        ], 
-        "resource_tpl": [
-            {
-                "main_memory_size": "2048", 
-                "resource_name": "resource_tpl#7", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "4096", 
-                "resource_name": "resource_tpl#8", 
-                "physical_cpus": "2", 
-                "logical_cpus": "2"
-            }, 
-            {
-                "main_memory_size": "32768", 
-                "resource_name": "resource_tpl#11", 
-                "physical_cpus": "16", 
-                "logical_cpus": "16"
-            }, 
-            {
-                "main_memory_size": "16384", 
-                "resource_name": "resource_tpl#10", 
-                "physical_cpus": "8", 
-                "logical_cpus": "8"
-            }, 
-            {
-                "main_memory_size": "512", 
-                "resource_name": "resource_tpl#6", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "8192", 
-                "resource_name": "resource_tpl#9", 
-                "physical_cpus": "4", 
-                "logical_cpus": "4"
-            }
-        ], 
-        "provider": [
-            {
-                "status": "Certified", 
-                "sitename": "RECAS-BARI", 
-                "keystone_endpoint": "N/A", 
-                "authn": "X509-VOMS", 
-                "occi_endpoint": "http://cloud.recas.ba.infn.it:8774/v2.1/f41187320a504846b132582e172fa268", 
-                "id": "8016G0"
-            }
-        ]
-    }, 
-    {
-        "os_tpl": [
-            {
-                "vmiversion": "4.1.1-2", 
-                "va_provider_image_id": "os#4145d120-6843-4500-a9f2-63ae8f8931eb", 
-                "appname": "Jupyter Notebook"
-            }, 
-            {
-                "vmiversion": "2017.03.29", 
-                "va_provider_image_id": "os#625bbe5d-f9fc-4886-b94c-172fd38d9f35", 
-                "appname": "EGI Fedora 25-DELETED-9abb6c48-687b-4580-b1e9-9e40d3760c76"
-            }, 
-            {
-                "vmiversion": "3.7.1.7", 
-                "va_provider_image_id": "os#2bc686e4-7916-4765-ad19-aa83a5eb6e89", 
-                "appname": "DCI-Bridge"
-            }, 
-            {
-                "vmiversion": "3.7.5.4", 
-                "va_provider_image_id": "os#fd3fc265-f7e4-42fb-9481-b9c81e141a91", 
-                "appname": "DCI-Bridge"
-            }, 
-            {
-                "vmiversion": "3.6.2", 
-                "va_provider_image_id": "os#4f1c80e4-5aea-4e75-95b3-e264845e57fb", 
-                "appname": "Chipster"
-            }, 
-            {
-                "vmiversion": "3.14.2", 
-                "va_provider_image_id": "os#ac268b33-5b9e-4a46-bfd6-b84ed7083dad", 
-                "appname": "Chipster"
-            }, 
-            {
-                "vmiversion": "2019.07.08", 
-                "va_provider_image_id": "os#81ba45a3-4c56-4858-ae89-03bff982128d", 
-                "appname": "EGI CentOS 7"
-            }, 
-            {
-                "vmiversion": "2019.07.08", 
-                "va_provider_image_id": "os#d54df173-4396-4b7d-b1f4-86c19c9beca4", 
-                "appname": "EGI Centos 6"
-            }, 
-            {
-                "vmiversion": "2018.01.23", 
-                "va_provider_image_id": "os#b8ee3a2f-e7cc-4cf5-b191-e4529883e28e", 
-                "appname": "EGI Ubuntu 16.04 LTS"
-            }, 
-            {
-                "vmiversion": "2019.07.11", 
-                "va_provider_image_id": "os#566b2c8e-6af4-435d-835e-7f5e607db18e", 
-                "appname": "EGI Ubuntu 16.04 LTS"
-            }, 
-            {
-                "vmiversion": "2019.07.11", 
-                "va_provider_image_id": "os#7495de3b-ec60-4d1d-badd-37ed914698a8", 
-                "appname": "EGI Ubuntu 14.04"
-            }
-        ], 
-        "resource_tpl": [
-            {
-                "main_memory_size": "2048", 
-                "resource_name": "resource_tpl#7", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "4096", 
-                "resource_name": "resource_tpl#8", 
-                "physical_cpus": "2", 
-                "logical_cpus": "2"
-            }, 
-            {
-                "main_memory_size": "32768", 
-                "resource_name": "resource_tpl#11", 
-                "physical_cpus": "16", 
-                "logical_cpus": "16"
-            }, 
-            {
-                "main_memory_size": "16384", 
-                "resource_name": "resource_tpl#10", 
-                "physical_cpus": "8", 
-                "logical_cpus": "8"
-            }, 
-            {
-                "main_memory_size": "512", 
-                "resource_name": "resource_tpl#6", 
-                "physical_cpus": "1", 
-                "logical_cpus": "1"
-            }, 
-            {
-                "main_memory_size": "8192", 
-                "resource_name": "resource_tpl#9", 
-                "physical_cpus": "4", 
-                "logical_cpus": "4"
-            }
-        ], 
-        "provider": [
-            {
-                "status": "Certified", 
-                "sitename": "RECAS-BARI", 
-                "keystone_endpoint": "N/A", 
-                "authn": "X509-VOMS", 
-                "occi_endpoint": "http://cloud.recas.ba.infn.it:8787/occi/", 
-                "id": "8015G0"
-            }
-        ]
-    }
+   {
+      "resource_tpl": [
+         {
+            "main_memory_size": "8192",
+            "logical_cpus": "4",
+            "resource_name": "26d14547-96f2-4751-a686-f89a9f7cd9cc",
+            "physical_cpus": "4"
+         },
+         {
+            "main_memory_size": "2048",
+            "logical_cpus": "2",
+            "resource_name": "42eb9c81-e556-4b63-bc19-4c9fb735e344",
+            "physical_cpus": "2"
+         },
+         {
+            "main_memory_size": "4096",
+            "logical_cpus": "2",
+            "resource_name": "be62450f-c977-42fc-b6ec-ef51610220cd",
+            "physical_cpus": "2"
+         },
+         {
+            "main_memory_size": "4096",
+            "logical_cpus": "1",
+            "resource_name": "13eb41c8-ca84-4603-a12a-84275ea6621d",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "4096",
+            "logical_cpus": "4",
+            "resource_name": "4787d9fc-3923-4fc9-b770-30966fc3baee",
+            "physical_cpus": "4"
+         },
+         {
+            "main_memory_size": "1024",
+            "logical_cpus": "1",
+            "resource_name": "635c739a-692f-4890-b8fd-d50963bff00e",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "512",
+            "logical_cpus": "1",
+            "resource_name": "6ba0080d-d71c-4aff-b6f9-b5a9484097f8",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "4096",
+            "logical_cpus": "1",
+            "resource_name": "584fb907-ad68-461e-b318-d520c48b1ce4",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "8192",
+            "logical_cpus": "2",
+            "resource_name": "a8bb4fef-4b3b-4a9a-99f5-5eb28f3a3fa3",
+            "physical_cpus": "2"
+         },
+         {
+            "main_memory_size": "4096",
+            "logical_cpus": "2",
+            "resource_name": "6e514065-9013-4ce1-908a-0dcc173125e4",
+            "physical_cpus": "2"
+         },
+         {
+            "main_memory_size": "32768",
+            "logical_cpus": "8",
+            "resource_name": "f4044905-0e96-4ccb-9345-514e985d31a5",
+            "physical_cpus": "8"
+         },
+         {
+            "main_memory_size": "2048",
+            "logical_cpus": "1",
+            "resource_name": "85f66ce6-0b66-4889-a0bf-df8dc23ee540",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "16384",
+            "logical_cpus": "4",
+            "resource_name": "a8ddf9c8-eb75-4f1c-9d9f-49c9ea5c2fe5",
+            "physical_cpus": "4"
+         },
+         {
+            "main_memory_size": "8192",
+            "logical_cpus": "1",
+            "resource_name": "8a5f58d2-fe06-4d53-a10e-041fdb6e4ea5",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "61440",
+            "logical_cpus": "24",
+            "resource_name": "0a28df3a-7d12-4372-b97f-fc083952859f",
+            "physical_cpus": "24"
+         },
+         {
+            "main_memory_size": "51200",
+            "logical_cpus": "24",
+            "resource_name": "c4aa496b-4684-4a86-bd7f-3a67c04b1fa6",
+            "physical_cpus": "24"
+         },
+         {
+            "main_memory_size": "4096",
+            "logical_cpus": "2",
+            "resource_name": "edac68c3-50ea-42c2-ae1d-76b8beb306b5",
+            "physical_cpus": "2"
+         },
+         {
+            "main_memory_size": "16384",
+            "logical_cpus": "8",
+            "resource_name": "1ceccfe4-c69a-4fde-912e-566dd07b8851",
+            "physical_cpus": "8"
+         }
+      ],
+      "os_tpl": [
+         {
+            "appname": "Chipster",
+            "va_provider_image_id": "https://fedcloud-osservices.egi.cesga.es/a241ad3e-388d-4418-97de-851ea2900dff",
+            "vmiversion": "3.16.3"
+         },
+         {
+            "appname": "EGI CentOS 7",
+            "va_provider_image_id": "https://fedcloud-osservices.egi.cesga.es/20267c96-b9dd-4111-b2dc-e5103113efd7",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "EGI Ubuntu 16.04 LTS",
+            "va_provider_image_id": "https://fedcloud-osservices.egi.cesga.es/e1b2b403-1b04-4ffa-9134-774cd45d20d8",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "CernVM4",
+            "va_provider_image_id": "https://fedcloud-osservices.egi.cesga.es/5103b65b-fc5b-478b-85c7-ba60a62200ff",
+            "vmiversion": "v4"
+         },
+         {
+            "appname": "EGI Docker",
+            "va_provider_image_id": "https://fedcloud-osservices.egi.cesga.es/de8dd21b-ff87-44ef-9f68-cefa022849b8",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "EGI CentOS 8",
+            "va_provider_image_id": "https://fedcloud-osservices.egi.cesga.es/e72d2bbc-1b2a-4752-8f2a-3927c3ca4b83",
+            "vmiversion": "2020.09.22"
+         },
+         {
+            "appname": "EGI Ubuntu 18.04",
+            "va_provider_image_id": "https://fedcloud-osservices.egi.cesga.es/63c19a21-8925-4ed3-976d-63581cfdaa34",
+            "vmiversion": "2020.07.07"
+         }
+      ],
+      "provider": [
+         {
+            "keystone_endpoint": "https://fedcloud-osservices.egi.cesga.es:5000/v3",
+            "vo": "vo.access.egi.eu",
+            "sitename": "CESGA",
+            "occi_endpoint": "https://fedcloud-osservices.egi.cesga.es:5000/v3",
+            "authn": "OIDC",
+            "id": "11548G0",
+            "status": "Certified",
+            "project_id": "3a8e9d966e644405bf19b536adf7743d"
+         }
+      ]
+   },
+   {
+      "resource_tpl": [
+         {
+            "main_memory_size": "30000",
+            "logical_cpus": "16",
+            "resource_name": "45d32c56-c2e8-4fed-a254-5e9cf0be62fc",
+            "physical_cpus": "16"
+         },
+         {
+            "main_memory_size": "14000",
+            "logical_cpus": "8",
+            "resource_name": "5",
+            "physical_cpus": "8"
+         },
+         {
+            "main_memory_size": "30000",
+            "logical_cpus": "16",
+            "resource_name": "fde83d11-6b5d-4f14-b15b-853f84a282b2",
+            "physical_cpus": "16"
+         },
+         {
+            "main_memory_size": "60000",
+            "logical_cpus": "32",
+            "resource_name": "c765383f-b144-4e90-8819-0cd00cabff67",
+            "physical_cpus": "32"
+         },
+         {
+            "main_memory_size": "60000",
+            "logical_cpus": "32",
+            "resource_name": "680627a9-2917-4cb4-8aaf-2db9f421eead",
+            "physical_cpus": "32"
+         },
+         {
+            "main_memory_size": "3500",
+            "logical_cpus": "2",
+            "resource_name": "7d1c1a53-f7ad-46a4-bedd-106f433ca3ee",
+            "physical_cpus": "2"
+         },
+         {
+            "main_memory_size": "2000",
+            "logical_cpus": "1",
+            "resource_name": "2",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "3500",
+            "logical_cpus": "2",
+            "resource_name": "cd775e27-af09-407b-ab34-fb999ba418bd",
+            "physical_cpus": "2"
+         },
+         {
+            "main_memory_size": "7500",
+            "logical_cpus": "4",
+            "resource_name": "3e880029-31a2-418a-8c69-f3330aaa3e96",
+            "physical_cpus": "4"
+         },
+         {
+            "main_memory_size": "15000",
+            "logical_cpus": "8",
+            "resource_name": "786e7ddc-e0a5-4c6a-b513-795bd1b5c54f",
+            "physical_cpus": "8"
+         },
+         {
+            "main_memory_size": "7500",
+            "logical_cpus": "4",
+            "resource_name": "557762dc-f1a8-4e1e-94c0-2651b986b4a0",
+            "physical_cpus": "4"
+         },
+         {
+            "main_memory_size": "512",
+            "logical_cpus": "1",
+            "resource_name": "1",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "7000",
+            "logical_cpus": "4",
+            "resource_name": "4",
+            "physical_cpus": "4"
+         },
+         {
+            "main_memory_size": "4000",
+            "logical_cpus": "2",
+            "resource_name": "3",
+            "physical_cpus": "2"
+         },
+         {
+            "main_memory_size": "15000",
+            "logical_cpus": "8",
+            "resource_name": "be584127-8f1f-45f0-b19c-9f30177e8e48",
+            "physical_cpus": "8"
+         },
+         {
+            "main_memory_size": "30000",
+            "logical_cpus": "16",
+            "resource_name": "9beb31e1-0796-4a2e-9d48-8b5f41a44d89",
+            "physical_cpus": "16"
+         }
+      ],
+      "os_tpl": [
+         {
+            "appname": "EGI Docker",
+            "va_provider_image_id": "https://api.cloud.ifca.es/33884fe6-d6dc-4bf8-8449-93ab692f5433",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "Chipster",
+            "va_provider_image_id": "https://api.cloud.ifca.es/3e19ee89-8690-420a-972d-9d5aaa26f71d",
+            "vmiversion": "3.16.3"
+         },
+         {
+            "appname": "EGI CentOS 7",
+            "va_provider_image_id": "https://api.cloud.ifca.es/bd7d5697-a0dd-4c21-971d-25a5dcac47a7",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "ECAS",
+            "va_provider_image_id": "https://api.cloud.ifca.es/b2aaa4b2-cf16-45bb-b70c-16d3b802aec8",
+            "vmiversion": "1.0"
+         },
+         {
+            "appname": "EGI Ubuntu 16.04 LTS",
+            "va_provider_image_id": "https://api.cloud.ifca.es/2c32c132-6674-42fc-a73c-b9552ab724f6",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "CernVM4",
+            "va_provider_image_id": "https://api.cloud.ifca.es/c61c6b0d-6c28-4025-ae02-327f8060f7aa",
+            "vmiversion": "v4"
+         },
+         {
+            "appname": "EGI Docker",
+            "va_provider_image_id": "https://api.cloud.ifca.es/6bb1ae21-9d0f-4938-8e4b-d528b962ccb3",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "EGI CentOS 8",
+            "va_provider_image_id": "https://api.cloud.ifca.es/b5801133-0a7c-4931-bef2-46c2c091a3d1",
+            "vmiversion": "2020.09.22"
+         },
+         {
+            "appname": "EGI Ubuntu 18.04",
+            "va_provider_image_id": "https://api.cloud.ifca.es/723171cb-53b2-4881-ae37-a7400ce0665b",
+            "vmiversion": "2020.07.07"
+         },
+         {
+            "appname": "CernVM3",
+            "va_provider_image_id": "https://api.cloud.ifca.es/a6bdeb0c-6e4b-4b94-9c9b-b37c1d4833f0",
+            "vmiversion": "1"
+         },
+         {
+            "appname": "EGI Centos 6",
+            "va_provider_image_id": "https://api.cloud.ifca.es/b9832b31-2d70-4961-86cc-ccb030a7e42a",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "EGI CentOS 7",
+            "va_provider_image_id": "https://api.cloud.ifca.es/66f4f87f-907f-4cbc-bc0c-f639ca69681c",
+            "vmiversion": "2020.07.08"
+         }
+      ],
+      "provider": [
+         {
+            "keystone_endpoint": "https://api.cloud.ifca.es:5000/v3/",
+            "vo": "vo.access.egi.eu",
+            "sitename": "IFCA-LCG2",
+            "occi_endpoint": "https://api.cloud.ifca.es:5000/v3/",
+            "authn": "OIDC",
+            "id": "7513G0",
+            "status": "Certified",
+            "project_id": "999f045cb1ff4684a15ebb338af69460"
+         }
+      ]
+   },
+   {
+      "resource_tpl": [
+         {
+            "main_memory_size": "262144",
+            "logical_cpus": "64",
+            "resource_name": "5f0a3206-5f25-4341-beba-7d0a96cdb108",
+            "physical_cpus": "64"
+         },
+         {
+            "main_memory_size": "65536",
+            "logical_cpus": "16",
+            "resource_name": "aca4fac9-4761-4735-88b8-4102d6f4ecb3",
+            "physical_cpus": "16"
+         },
+         {
+            "main_memory_size": "65536",
+            "logical_cpus": "32",
+            "resource_name": "cf7f0d1f-8ecd-4b19-b6bb-f2f89cf55bd0",
+            "physical_cpus": "32"
+         },
+         {
+            "main_memory_size": "32768",
+            "logical_cpus": "16",
+            "resource_name": "1ff24edd-1283-469c-abc1-7f697873d63c",
+            "physical_cpus": "16"
+         },
+         {
+            "main_memory_size": "131072",
+            "logical_cpus": "16",
+            "resource_name": "588f4548-b8e7-48fd-8ee5-357662a4c08f",
+            "physical_cpus": "16"
+         },
+         {
+            "main_memory_size": "65536",
+            "logical_cpus": "8",
+            "resource_name": "9a1064f7-3488-4a7a-86c8-0d388eef23bd",
+            "physical_cpus": "8"
+         },
+         {
+            "main_memory_size": "8192",
+            "logical_cpus": "4",
+            "resource_name": "ab9784d7-e785-4f4e-a415-1d188505b5eb",
+            "physical_cpus": "4"
+         },
+         {
+            "main_memory_size": "131072",
+            "logical_cpus": "8",
+            "resource_name": "d6aae2a5-8f5d-40dd-b6f3-2e8d9fb7efa1",
+            "physical_cpus": "8"
+         },
+         {
+            "main_memory_size": "4096",
+            "logical_cpus": "2",
+            "resource_name": "ab1fbd4c-324d-4155-bd0f-72f077f0ebce",
+            "physical_cpus": "2"
+         },
+         {
+            "main_memory_size": "4096",
+            "logical_cpus": "1",
+            "resource_name": "048fc66b-d60a-4d07-b1e4-1fae3e6ab395",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "2048",
+            "logical_cpus": "1",
+            "resource_name": "2",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "131072",
+            "logical_cpus": "64",
+            "resource_name": "7005975e-735f-4b08-a69d-2ce1a771be85",
+            "physical_cpus": "64"
+         },
+         {
+            "main_memory_size": "16384",
+            "logical_cpus": "8",
+            "resource_name": "6cdf0bde-85c6-4e92-b7ab-f80c75a695b7",
+            "physical_cpus": "8"
+         }
+      ],
+      "os_tpl": [
+         {
+            "appname": "Chipster",
+            "va_provider_image_id": "https://sbgcloud.in2p3.fr/c2a5ebb2-f379-4942-b21f-2d7b155484aa",
+            "vmiversion": "3.16.3"
+         },
+         {
+            "appname": "EGI CentOS 7",
+            "va_provider_image_id": "https://sbgcloud.in2p3.fr/20de522d-1242-4211-be13-bcef51058a5e",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "EGI Ubuntu 16.04 LTS",
+            "va_provider_image_id": "https://sbgcloud.in2p3.fr/32d407cc-6499-49a9-9029-a8ebcdf8105c",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "CernVM4",
+            "va_provider_image_id": "https://sbgcloud.in2p3.fr/9a816c52-7b61-4fb7-a677-58332661ba9a",
+            "vmiversion": "v4"
+         },
+         {
+            "appname": "EGI Docker",
+            "va_provider_image_id": "https://sbgcloud.in2p3.fr/cc0e7222-10eb-47f3-8c52-584e74835b85",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "EGI CentOS 8",
+            "va_provider_image_id": "https://sbgcloud.in2p3.fr/aaafae2b-06f2-4db2-9fa0-b65f0c016d28",
+            "vmiversion": "2020.09.22"
+         },
+         {
+            "appname": "EGI Ubuntu 18.04",
+            "va_provider_image_id": "https://sbgcloud.in2p3.fr/0c8fb106-66fc-4261-b359-9bd654bd96ca",
+            "vmiversion": "2020.07.07"
+         }
+      ],
+      "provider": [
+         {
+            "keystone_endpoint": "https://sbgcloud.in2p3.fr:5000/v3",
+            "vo": "vo.access.egi.eu",
+            "sitename": "IN2P3-IRES",
+            "occi_endpoint": "https://sbgcloud.in2p3.fr:5000/v3",
+            "authn": "OIDC",
+            "id": "7535G0",
+            "status": "Certified",
+            "project_id": "7a91022b9ae74ed9ac1a574972a79499"
+         }
+      ]
+   },
+   {
+      "resource_tpl": [
+         {
+            "main_memory_size": "4096",
+            "logical_cpus": "2",
+            "resource_name": "http://schemas.openstack.org/template/resource#2d4b92be-3f73-4308-a930-2acc426e4998",
+            "physical_cpus": "2"
+         },
+         {
+            "main_memory_size": "64",
+            "logical_cpus": "1",
+            "resource_name": "http://schemas.openstack.org/template/resource#b8f64e9d-d5bc-40c3-bdc6-d55fe3625c72",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "512",
+            "logical_cpus": "1",
+            "resource_name": "http://schemas.openstack.org/template/resource#f1356df5-fc28-43ba-bba0-2ad0dcd01b1b",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "2048",
+            "logical_cpus": "1",
+            "resource_name": "http://schemas.openstack.org/template/resource#8c3bded5-f640-4870-8ed0-f73d3f8eca8e",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "8192",
+            "logical_cpus": "4",
+            "resource_name": "http://schemas.openstack.org/template/resource#ce1d7a0e-32cf-44c8-a8ba-6a387f516b69",
+            "physical_cpus": "4"
+         },
+         {
+            "main_memory_size": "16384",
+            "logical_cpus": "8",
+            "resource_name": "http://schemas.openstack.org/template/resource#831e1465-3551-4ce3-a663-cebee7b04710",
+            "physical_cpus": "8"
+         }
+      ],
+      "os_tpl": [
+         {
+            "appname": "Chipster",
+            "va_provider_image_id": "http://schemas.openstack.org/template/os#86ee639b-1309-44db-b5cd-8a5ba7aed11d",
+            "vmiversion": "3.16.3"
+         },
+         {
+            "appname": "EGI CentOS 7",
+            "va_provider_image_id": "http://schemas.openstack.org/template/os#11aefa94-b96c-49a4-b0d7-6fa52f00f13f",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "ECAS",
+            "va_provider_image_id": "http://schemas.openstack.org/template/os#54cde2f4-f101-4883-99d8-265c2ef9a6d8",
+            "vmiversion": "1.0"
+         },
+         {
+            "appname": "EGI Ubuntu 16.04 LTS",
+            "va_provider_image_id": "http://schemas.openstack.org/template/os#8fd38273-ae0d-45ae-9bbf-3d5fa4762789",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "CernVM4",
+            "va_provider_image_id": "http://schemas.openstack.org/template/os#89b3d4f6-6389-420a-ac23-47a627510eda",
+            "vmiversion": "v1"
+         },
+         {
+            "appname": "EGI Docker",
+            "va_provider_image_id": "http://schemas.openstack.org/template/os#08964724-7326-4bea-aaa9-1161304b92e9",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "EGI CentOS 8",
+            "va_provider_image_id": "http://schemas.openstack.org/template/os#c57ff893-978d-4158-a91f-5a37e3ce7d66",
+            "vmiversion": "2020.09.22"
+         },
+         {
+            "appname": "EGI Ubuntu 18.04",
+            "va_provider_image_id": "http://schemas.openstack.org/template/os#fe1dd74e-6a32-4e0e-b5c8-035edff04566",
+            "vmiversion": "2020.07.07"
+         },
+         {
+            "appname": "CernVM3",
+            "va_provider_image_id": "http://schemas.openstack.org/template/os#fb1dc819-bb04-418a-91fc-f77505751331",
+            "vmiversion": "1"
+         }
+      ],
+      "provider": [
+         {
+            "keystone_endpoint": "N/A",
+            "vo": "vo.access.egi.eu",
+            "sitename": "INFN-CATANIA-STACK",
+            "occi_endpoint": "http://stack-server.ct.infn.it:8787/occi1.1",
+            "authn": "OIDC",
+            "id": "9159G0",
+            "status": "Certified",
+            "project_id": "4b9f8d6ab992452ca40921b21984008a"
+         }
+      ]
+   },
+   {
+      "resource_tpl": [
+         {
+            "main_memory_size": "64",
+            "logical_cpus": "1",
+            "resource_name": "b8f64e9d-d5bc-40c3-bdc6-d55fe3625c72",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "4096",
+            "logical_cpus": "2",
+            "resource_name": "2d4b92be-3f73-4308-a930-2acc426e4998",
+            "physical_cpus": "2"
+         },
+         {
+            "main_memory_size": "512",
+            "logical_cpus": "1",
+            "resource_name": "f1356df5-fc28-43ba-bba0-2ad0dcd01b1b",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "2048",
+            "logical_cpus": "1",
+            "resource_name": "8c3bded5-f640-4870-8ed0-f73d3f8eca8e",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "8192",
+            "logical_cpus": "4",
+            "resource_name": "ce1d7a0e-32cf-44c8-a8ba-6a387f516b69",
+            "physical_cpus": "4"
+         },
+         {
+            "main_memory_size": "16384",
+            "logical_cpus": "8",
+            "resource_name": "831e1465-3551-4ce3-a663-cebee7b04710",
+            "physical_cpus": "8"
+         }
+      ],
+      "os_tpl": [
+         {
+            "appname": "Chipster",
+            "va_provider_image_id": "https://stack-server.ct.infn.it/86ee639b-1309-44db-b5cd-8a5ba7aed11d",
+            "vmiversion": "3.16.3"
+         },
+         {
+            "appname": "EGI CentOS 7",
+            "va_provider_image_id": "https://stack-server.ct.infn.it/11aefa94-b96c-49a4-b0d7-6fa52f00f13f",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "ECAS",
+            "va_provider_image_id": "https://stack-server.ct.infn.it/54cde2f4-f101-4883-99d8-265c2ef9a6d8",
+            "vmiversion": "1.0"
+         },
+         {
+            "appname": "EGI Ubuntu 16.04 LTS",
+            "va_provider_image_id": "https://stack-server.ct.infn.it/8fd38273-ae0d-45ae-9bbf-3d5fa4762789",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "EGI Docker",
+            "va_provider_image_id": "https://stack-server.ct.infn.it/08964724-7326-4bea-aaa9-1161304b92e9",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "EGI CentOS 8",
+            "va_provider_image_id": "https://stack-server.ct.infn.it/c57ff893-978d-4158-a91f-5a37e3ce7d66",
+            "vmiversion": "2020.09.22"
+         },
+         {
+            "appname": "EGI Ubuntu 18.04",
+            "va_provider_image_id": "https://stack-server.ct.infn.it/fe1dd74e-6a32-4e0e-b5c8-035edff04566",
+            "vmiversion": "2020.07.07"
+         },
+         {
+            "appname": "CernVM3",
+            "va_provider_image_id": "https://stack-server.ct.infn.it/fb1dc819-bb04-418a-91fc-f77505751331",
+            "vmiversion": "1"
+         }
+      ],
+      "provider": [
+         {
+            "keystone_endpoint": "https://stack-server.ct.infn.it:35357/v3",
+            "vo": "vo.access.egi.eu",
+            "sitename": "INFN-CATANIA-STACK",
+            "occi_endpoint": "https://stack-server.ct.infn.it:35357/v3",
+            "authn": "OIDC",
+            "id": "11488G0",
+            "status": "Certified",
+            "project_id": "4b9f8d6ab992452ca40921b21984008a"
+         }
+      ]
+   },
+   {
+      "resource_tpl": [
+         {
+            "main_memory_size": "2048",
+            "logical_cpus": "1",
+            "resource_name": "1",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "512",
+            "logical_cpus": "1",
+            "resource_name": "0",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "8192",
+            "logical_cpus": "2",
+            "resource_name": "10",
+            "physical_cpus": "2"
+         },
+         {
+            "main_memory_size": "8192",
+            "logical_cpus": "4",
+            "resource_name": "3",
+            "physical_cpus": "4"
+         },
+         {
+            "main_memory_size": "16384",
+            "logical_cpus": "4",
+            "resource_name": "11",
+            "physical_cpus": "4"
+         },
+         {
+            "main_memory_size": "4096",
+            "logical_cpus": "2",
+            "resource_name": "2",
+            "physical_cpus": "2"
+         }
+      ],
+      "os_tpl": [
+         {
+            "appname": "Chipster",
+            "va_provider_image_id": "https://egi-cloud.pd.infn.it/c8a8f2ae-6ca9-4a40-af9b-79ac1f78b37c",
+            "vmiversion": "3.16.3"
+         },
+         {
+            "appname": "EGI CentOS 7",
+            "va_provider_image_id": "https://egi-cloud.pd.infn.it/9aedf4fb-f5cd-438c-bb7b-11dba6625c2f",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "EGI Ubuntu 16.04 LTS",
+            "va_provider_image_id": "https://egi-cloud.pd.infn.it/783277d7-d817-49a0-90e1-088fae236e7c",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "EGI Docker",
+            "va_provider_image_id": "https://egi-cloud.pd.infn.it/9c9918b3-4dae-417a-8e7c-3065a5982e9a",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "EGI Ubuntu 18.04",
+            "va_provider_image_id": "https://egi-cloud.pd.infn.it/9e22c924-d6a7-4d1b-8939-cd644b8185a0",
+            "vmiversion": "2020.07.07"
+         },
+         {
+            "appname": "EGI CentOS 8",
+            "va_provider_image_id": "https://egi-cloud.pd.infn.it/cd6ba3e8-d123-4222-af79-f62d2df69c33",
+            "vmiversion": "2020.09.17"
+         }
+      ],
+      "provider": [
+         {
+            "keystone_endpoint": "https://egi-cloud.pd.infn.it:443/v3",
+            "vo": "vo.access.egi.eu",
+            "sitename": "INFN-PADOVA-STACK",
+            "occi_endpoint": "https://egi-cloud.pd.infn.it:443/v3",
+            "authn": "OIDC",
+            "id": "11047G0",
+            "status": "Certified",
+            "project_id": "5ddb325ca8c2495abfd4e8f230bcd51a"
+         }
+      ]
+   },
+   {
+      "resource_tpl": [
+         {
+            "main_memory_size": "8192",
+            "logical_cpus": "2",
+            "resource_name": "84e7b6f5-c21a-4a85-aa3b-dcfbf62a256f",
+            "physical_cpus": "2"
+         },
+         {
+            "main_memory_size": "1024",
+            "logical_cpus": "1",
+            "resource_name": "fd2b2fa8-b362-492a-b247-44b2f6b45963",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "4096",
+            "logical_cpus": "1",
+            "resource_name": "1466e468-f3fc-4ad6-8224-e057d890474d",
+            "physical_cpus": "1"
+         },
+         {
+            "main_memory_size": "16384",
+            "logical_cpus": "4",
+            "resource_name": "41caa244-34b6-4205-9c4b-e6b545b3e2eb",
+            "physical_cpus": "4"
+         },
+         {
+            "main_memory_size": "2048",
+            "logical_cpus": "2",
+            "resource_name": "c35712e4-4935-49c2-8860-66cec5a77f7e",
+            "physical_cpus": "2"
+         },
+         {
+            "main_memory_size": "4096",
+            "logical_cpus": "4",
+            "resource_name": "5c9f0ea9-6c6c-477c-8cfc-6517bcda6272",
+            "physical_cpus": "4"
+         }
+      ],
+      "os_tpl": [
+         {
+            "appname": "Chipster",
+            "va_provider_image_id": "https://fcctrl.ulakbim.gov.tr/8c7bebdb-c43b-4a8b-b257-54fd528ae257",
+            "vmiversion": "3.16.3"
+         },
+         {
+            "appname": "EGI CentOS 7",
+            "va_provider_image_id": "https://fcctrl.ulakbim.gov.tr/38f9a841-e734-4389-a9e2-fcca6cb571b8",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "EGI Ubuntu 16.04 LTS",
+            "va_provider_image_id": "https://fcctrl.ulakbim.gov.tr/15ec0544-d042-40b0-a514-361ef9d173fe",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "CernVM4",
+            "va_provider_image_id": "https://fcctrl.ulakbim.gov.tr/b6d6334e-ac5d-42ab-93c9-077a9c97f448",
+            "vmiversion": "v4"
+         },
+         {
+            "appname": "EGI Docker",
+            "va_provider_image_id": "https://fcctrl.ulakbim.gov.tr/70d821aa-6137-4bfc-b3f2-68d8b789d185",
+            "vmiversion": "2020.07.08"
+         },
+         {
+            "appname": "EGI CentOS 8",
+            "va_provider_image_id": "https://fcctrl.ulakbim.gov.tr/891cf371-72af-43e3-a4dc-6ee22ed096a9",
+            "vmiversion": "2020.09.22"
+         },
+         {
+            "appname": "EGI Ubuntu 18.04",
+            "va_provider_image_id": "https://fcctrl.ulakbim.gov.tr/a2ceba64-fdf0-44b1-acc5-07e3b84d60e3",
+            "vmiversion": "2020.07.07"
+         }
+      ],
+      "provider": [
+         {
+            "keystone_endpoint": "https://fcctrl.ulakbim.gov.tr:5000/v3",
+            "vo": "vo.access.egi.eu",
+            "sitename": "TR-FC1-ULAKBIM",
+            "occi_endpoint": "https://fcctrl.ulakbim.gov.tr:5000/v3",
+            "authn": "OIDC",
+            "id": "12270G0",
+            "status": "Certified",
+            "project_id": "062cfb2d806a49a4a82055cb1ac4e6a7"
+         }
+      ]
+   }
 ]
-
