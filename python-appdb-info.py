@@ -48,7 +48,7 @@ def appdb_call_v2(path):
 	
 	return xmltodict.parse(r1)
 
-def get_provider_metadata(providerID):
+def get_provider_metadata(providerID, vo_name):
 	''' Get metadata from the given cloud provider '''
 
 	# Initialize the JSON object
@@ -56,6 +56,7 @@ def get_provider_metadata(providerID):
 
 	try:
 		keystone_url = ""
+		project_id = ""
 
         # E.g.: https://appdb.egi.eu/rest/1.0/va_providers/8253G0
 		data = appdb_call_v2('/rest/1.0/va_providers/%s' %providerID)
@@ -63,6 +64,10 @@ def get_provider_metadata(providerID):
 		provider_name = data['appdb:appdb']['virtualization:provider']['provider:name']	
 		provider_authn = data['appdb:appdb']['virtualization:provider']
 		provider_service_type = data['appdb:appdb']['virtualization:provider']
+		provider_VOs = data['appdb:appdb']['virtualization:provider']['provider:shares']['vo:vo']
+		for key in provider_VOs:
+			if key['#text'] in vo_name:
+                		project_id=key['@projectid']
 
 		if (provider_service_type['@service_type'] == "org.openstack.nova"):
 			keystone_url = data['appdb:appdb']['virtualization:provider']['provider:url']
@@ -77,11 +82,13 @@ def get_provider_metadata(providerID):
 		provider.append({ 
 			"id": providerID,
 			"sitename" : provider_name, 
-            "status" : status['@status'], 
-	        "authn" : provider_authn['@authn'],
-        	"occi_endpoint" : provider_endpoint_url,
-            "keystone_endpoint" : keystone_url
-	    })
+            		"status" : status['@status'], 
+	        	"authn" : provider_authn['@authn'],
+			"vo": vo_name,
+			"project_id": project_id,
+        		"occi_endpoint" : provider_endpoint_url,
+            		"keystone_endpoint" : keystone_url
+	    	})
 
 	except Exception as error:
 		pass
@@ -233,13 +240,13 @@ def main():
 			if (get_os_tpl(providerID) and get_resource_tpl(providerID)):
 				# Creation of the final JSON object
 				providers.append({ 
-				     # Collect the provider metadata
-				     "provider" : get_provider_metadata(providerID),
-                     # Collect the resource_tpl published by the providerID (if any)
-	                 "resource_tpl" : get_resource_tpl(providerID),
-        	         # Collect the os_tpl published by the providerID (if any)
-	        	     "os_tpl" : get_os_tpl(providerID)
-                })
+				     	# Collect the provider metadata
+				     	"provider" : get_provider_metadata(providerID, vo),
+                     			# Collect the resource_tpl published by the providerID (if any)
+	                 		"resource_tpl" : get_resource_tpl(providerID),
+        	         		# Collect the os_tpl published by the providerID (if any)
+	        	     		"os_tpl" : get_os_tpl(providerID)
+                		})
 
 		# Diplay the final JSON object
 		print ("\n %s" %json.dumps(providers, 
